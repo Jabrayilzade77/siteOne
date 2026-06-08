@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import girlImage from "../assets/mahira.png";
 
 function Intro() {
   const navigate = useNavigate();
-
   const [opened, setOpened] = useState(false);
 
   return (
@@ -18,31 +16,27 @@ function Intro() {
             💌
           </div>
 
-          <h2>
-            Sənin üçün məktub var
-          </h2>
-
-          <p>
-            Açmaq üçün klik et ❤️
-          </p>
+          <h2>Sənin üçün məktub var</h2>
+          <p>Açmaq üçün klik et ❤️</p>
         </>
       ) : (
-        <div className="openedContent">
-          <img
-            src={girlImage}
-            alt=""
-            className="girlImage"
-          />
+        <div className="butterflyScene">
 
-          <h2>
-            Bir sualım var...
+          {/* Kəpənəklər */}
+          <div className="butterfly b1">🦋</div>
+          <div className="butterfly b2">🦋</div>
+          <div className="butterfly b3">🦋</div>
+          <div className="butterfly b4">🦋</div>
+
+          <h2 className="butterflyText">
+            Bir sualım var... 🩵
           </h2>
 
           <button
             className="yesBtn"
             onClick={() => navigate("/home")}
           >
-            Davam et ❤️
+            Davam et
           </button>
         </div>
       )}
