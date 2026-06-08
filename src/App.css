@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(
+    135deg,
+    #ff9ecf,
+    #ffc7df,
+    #ffe8f2
+  );
+
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.subtitle {
+  color: white;
+  text-align: center;
+}
+
+.yesBtn {
+  border: none;
+
+  background: #ff1493;
+
+  color: white;
+
+  padding: 15px 35px;
+
+  border-radius: 40px;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+.noBtn {
+  position: absolute;
+
+  border: none;
+
+  background: #777;
+
+  color: white;
+
+  padding: 15px 35px;
+
+  border-radius: 40px;
+
+  cursor: pointer;
+}
+
+input,
+select {
+  width: min(400px, 90vw);
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  border: none;
+
+  font-size: 16px;
+}
+
+.resultCard {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  width: min(500px, 90vw);
+
+  box-shadow: 0 10px 30px
+    rgba(0, 0, 0, 0.15);
+}
+
+.resultCard h2 {
+  margin-top: 15px;
+}
+
+.timeTitle {
+  color: white;
+}
+
+.timeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.timeBtn {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  background: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.timeBtn:hover {
+  transform: scale(1.05);
+}
+
+.activeTime {
+  background: #ff1493;
+  color: white;
+}
