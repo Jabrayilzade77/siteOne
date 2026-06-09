@@ -34,13 +34,14 @@ function Home() {
         Hə 😍
       </button>
 
-      <button
-        className="noBtn"
-        style={position}
-        onMouseEnter={moveButton}
-      >
-        Yox 😒
-      </button>
+    <button
+  className="noBtn"
+  style={position}
+  onMouseEnter={moveButton}
+  onTouchStart={moveButton}
+>
+  Yox 😒
+</button>
     </div>
   );
 }
